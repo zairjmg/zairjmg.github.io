@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/c0bdee0bdc.js" crossorigin="anonymous"></script>
+        <title>Portafolio_Dinamico</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="shortcut icon" href="./img/logotipo_Mesa de trabajo 1.ico" type="image/x-icon">
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <header>
+                <img src="./img/logotipo_Mesa de trabajo 1.png" alt="">
+                <div class="logo">
+                    <h1>Jair Mejia</h1>
+                    <p>Desarrollador</p>
+                </div>
+
+                <form action="" id="busqueda">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="buscar">
+                </form>
+
+                <div class="categorias" id="categorias">
+                    <a href="#" class="activo">todos</a>
+                    <a href="#">Naturaleza</a>
+                    <a href="#">Ciudades</a>
+                    <a href="#">Personas</a>
+                    <a href="#">Animales</a>
+                </div>
+            </header>
+
+            <section class="grid" id="grid">
+                <div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/ciudad1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/persona1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/paisaje1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/animal1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/animal2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/paisaje2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/ciudad2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/naturaleza1.png" alt="">
+				</div>
+			</div>
+            </section>
+
+            <section class="overlay" id="overlay">
+                <div class="contenedor-img">
+                    <button id="btn-cerrar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img src="" alt="" srcset="">
+                </div>
+                <p class="descripcion"></p>
+            </section>
+
+            <footer class="contenedor">
+                <div class="redes">
+                    <div class="contenedor-icono">
+                        <a href="#" target="_blank" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="#" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="#" target="_blank" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="creador">
+                    <p>Sitio diseñado por <a href="#">Jair Mejia</a> - <a href="https://github.com/zairjmg" target="_blank">Github</a></p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
